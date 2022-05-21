@@ -4,6 +4,11 @@
   --gren: #6accba;
   --yellow: #f1be3c;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -11,7 +16,9 @@
 
 body {
   font-family: sans-serif;
-  padding: 90px 20px 0;
+  /* padding-top: 90px; */
+  /* padding: 90px 20px 0; */
+  width: 100%;
 }
 
 .header {
@@ -79,6 +86,24 @@ body {
   cursor: pointer;
 
   display: none;
+}
+
+.section {
+  height: 600px;
+  width: 100%;
+}
+
+#nosotros {
+  background-color: #42210b;
+}
+
+#contacto {
+  background-color: yellow;
+}
+
+.footer {
+  background-color: aliceblue;
+  height: 600px;
 }
 
 /* MOBILE */
