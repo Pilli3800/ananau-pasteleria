@@ -22,7 +22,6 @@ navLink2.addEventListener("click", () => {
   console.log("Hola Mundo");
 });
 
-
 $(document).ready(function () {
   // Add smooth scrolling to all links
   $("nav-menu-link").on("click", function (event) {
