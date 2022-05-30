@@ -93,10 +93,16 @@ body {
 .section {
   height: 600px;
   width: 100%;
+  padding: 50px 0;
 }
 
 #nosotros {
   background-color: var(--white);
+}
+
+.section__titulo {
+  display: flex;
+  justify-content: center;
 }
 
 .container__nosotros {
@@ -104,7 +110,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding-top: 70px;
+  padding-top: 40px;
 }
 
 .container__nosotros-img {
@@ -228,7 +234,20 @@ body {
 
 .footer {
   background-color: var(--white);
-  height: 200px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  line-height: 70px;
+}
+
+.footer p {
+  margin-right: 30px;
+}
+
+.luis-alvarez{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
 .ir-arriba {
@@ -429,4 +448,19 @@ body {
   .button-type2:active {
     transform: scale(0.9);
   }
+
+  /* Footer */
+
+  .footer {
+    height: 200px;
+    display: block;
+  }
+
+  .footer p{
+    text-align: center;
+    margin: 0 0;
+    line-height: 50px;
+    padding: 0 0;
+  }
+
 }
