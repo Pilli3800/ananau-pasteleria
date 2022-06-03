@@ -1,8 +1,8 @@
 /* Globals */
 
 :root {
-  --navbar-bg-color: #ff693b;
-  --navbar-text-color: #f6fbf4;
+  --navbar-bg-color: #ffffff;
+  --navbar-text-color: black;
   --navbar-text-color-focus: white;
   --navbar-bg-contrast: #f1be3c;
 }
@@ -15,15 +15,13 @@
 
 body {
   height: 100vh;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.6;
 }
 
 main {
   min-height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .container {
@@ -53,7 +51,16 @@ main {
   align-items: center;
 }
 
-.home-link,
+.home-link {
+  font-weight: 900;
+  font-size: 20px;
+  color: var(--navbar-text-color);
+  transition: color 0.2s ease-in-out;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
 .navbar-link {
   color: var(--navbar-text-color);
   transition: color 0.2s ease-in-out;
@@ -66,7 +73,7 @@ main {
 
 .home-link:focus,
 .home-link:hover {
-  color: var(--navbar-text-color-focus);
+  color: #f1be3c;
 }
 
 .navbar-link {
@@ -116,12 +123,11 @@ main {
   margin: 2px;
   transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out,
     opacity 0.2s ease-in-out;
-  background-color: var(--navbar-text-color);
 }
 
 .navbar-toggle:focus .icon-bar,
 .navbar-toggle:hover .icon-bar {
-  background-color: var(--navbar-text-color-focus);
+  background-color: black;
 }
 
 #navbar.opened .navbar-toggle .icon-bar:first-child,
@@ -129,6 +135,7 @@ main {
   position: absolute;
   margin: 0;
   width: 30px;
+  color: black;
 }
 
 #navbar.opened .navbar-toggle .icon-bar:first-child {
@@ -236,6 +243,12 @@ main {
   width: 100%;
 }
 
+/* Section */
+
+#slideshow {
+  margin-top: 64px;
+}
+
 @media screen and (min-width: 700px) {
   .navbar-toggle {
     display: none;
@@ -266,9 +279,4 @@ main {
   #navbar .navbar-link:last-child {
     margin-right: 0;
   }
-}
-
-#options {
-  display: flex;
-  flex-direction: column;
 }
