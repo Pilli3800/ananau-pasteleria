@@ -37,3 +37,4 @@ document
       navbarMenu.classList = navType;
     });
   });
+

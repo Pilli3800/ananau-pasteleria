@@ -48,6 +48,7 @@ hr {
   left: 0;
   right: 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  z-index: 50;
 }
 
 .navbar-container {
@@ -254,7 +255,7 @@ hr {
 
 .section {
   width: 100%;
-  padding: 30px 40px;
+  padding: 30px 20px;
 }
 
 #slideshow {
@@ -268,12 +269,105 @@ hr {
   text-align: center;
 }
 
+#contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Cards */
+
+.card {
+  width: 280px;
+  height: 350px;
+  background-color: #faf5f5;
+  border-radius: 0.4em;
+  box-shadow: 0 10px 20px 4px rgb(35 35 35 / 10%);
+  margin: 20px auto;
+}
+
+.card__container{
+  padding: 30px 20px;
+}
+
+.card__container_img{
+  margin: 20px 0;
+}
+
 /* Buttoms */
+
+.buttom {
+  margin: 10px 10px;
+}
 
 .section__nosotros_container_buttoms {
   display: flex;
   flex-direction: column;
   padding: 20px auto;
+  margin-top: 15px;
+}
+
+.buttom_type1 {
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  border: 0;
+  border-radius: 0.317rem;
+  background-color: #f1be3c;
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: inherit;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.buttom_type1:hover {
+  opacity: 0.85;
+}
+
+.buttom_type1:active {
+  box-shadow: inset 0 3px 4px hsla(0, 0%, 0%, 0.2);
+}
+
+.buttom_type2:focus {
+  outline: thin dotted #444;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.buttom_type2 {
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  border: 0;
+  border-radius: 0.317rem;
+  background-color: #ff693b;
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: inherit;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.buttom_type2:hover {
+  opacity: 0.85;
+}
+
+.buttom_type2:active {
+  box-shadow: inset 0 3px 4px hsla(0, 0%, 0%, 0.2);
+}
+
+.buttom_type2:focus {
+  outline: thin dotted #444;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
 }
 
 /* Footer */
@@ -327,12 +421,6 @@ footer {
 #autor a {
   text-decoration: none;
   color: #f1be3c;
-}
-
-.buttom_type1 {
-}
-
-.buttom_type1:hover {
 }
 
 @media (min-width: 992px) {
@@ -427,5 +515,13 @@ footer {
 
   .section {
     width: 100%;
+  }
+
+  /* Buttoms */
+
+  .section__nosotros_container_buttoms {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 }
