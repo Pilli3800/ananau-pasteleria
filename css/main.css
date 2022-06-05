@@ -25,7 +25,9 @@ main {
 }
 
 hr {
-  margin: 30px 40px;
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
 }
 
 .container {
@@ -259,6 +261,21 @@ hr {
   margin-top: 64px;
 }
 
+#nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Buttoms */
+
+.section__nosotros_container_buttoms {
+  display: flex;
+  flex-direction: column;
+  padding: 20px auto;
+}
+
 /* Footer */
 
 footer {
@@ -312,7 +329,19 @@ footer {
   color: #f1be3c;
 }
 
+.buttom_type1 {
+}
+
+.buttom_type1:hover {
+}
+
 @media (min-width: 992px) {
+  /* Globals */
+
+  hr {
+    width: 96%;
+  }
+
   .navbar-toggle {
     display: none;
   }
@@ -365,18 +394,18 @@ footer {
     width: 180px;
     font-size: 16px;
     font-weight: bold;
-    padding: 0 0;
+    margin: 0 0;
   }
 
   .social_media {
-    margin: 20px 150px;
+    margin: 0 auto;
   }
 
-  .social_media a{
+  .social_media a {
     color: #000;
     font-size: 24px;
     text-decoration: none;
-    transition: .6s;
+    transition: 0.6s;
   }
 
   .social_media a:hover {
