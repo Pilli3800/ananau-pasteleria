@@ -49,12 +49,36 @@
     </header>
     <main>
         <section class="section" id="slideshow">
-            <h2>slideshow</h2>
+            <div class="slideshow-container">
+                <div class="slide">
+                    <img src="./img/logo/logo_main.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./img/logo/logo_main.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./img/logo/logo_main.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./img/logo/logo_main.png" alt="">
+                </div>
+
+                <a id="neg" class="prev">&#10094;</a>
+                <a id="pos" class="next">&#10095;</a>
+            </div>
+
+            <div class="pill-container">
+                <span data-index="0" class="pill"></span>
+                <span data-index="1" class="pill"></span>
+                <span data-index="2" class="pill"></span>
+                <span data-index="3" class="pill"></span>
+                <div class="progress"></div>
+            </div>
         </section>
-        <hr>
         <section class="section" id="nosotros">
             <h2>Nosotros</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, laborum omnis? Quo dolorum ipsa tempora temporibus molestias est eos amet!
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, laborum omnis? Quo dolorum ipsa tempora
+                temporibus molestias est eos amet!
             </p>
             <div class="section__nosotros_container_buttoms">
                 <a href="#"><button class="buttom buttom_type1"><span>Nuestra Historia</span></button></a>
@@ -64,17 +88,49 @@
         <hr>
         <section class="section" id="contacto">
             <h2>Contacto</h2>
-            <div class="card">
-                <div class="card__container">
-                    <div class="card__container_header">
-                        <p>Lorem ipsum dolor sit amet.</p>
+            <div class="section__contacto_container">
+                <div class="card">
+                    <div class="card__container">
+                        <div class="card__container_header">
+                            <p class="card__container_header_p">¿Y su número?</p>
+                        </div>
+                        <div class="card__container_img">
+                            <img src="./img/smartphone.png" style="width: 90px; height: 90px;" alt="">
+                        </div>
+                        <div class="card__container_body">
+                            <p>Nos pueden llamar al <strong>993627671</strong> o <strong>957025594</strong>, y mensajes
+                                por
+                                Whatsapp.</p>
+                            <a href="https://api.whatsapp.com/send?phone=51993627671"><button
+                                    class="buttom buttom_type1"><span>Contactarse</span></button></a>
+                        </div>
                     </div>
-                    <div class="card__container_img">
-                        <img src="./img/smartphone.png" style="width: 90px; height: 90px;" alt="">
+                </div>
+                <div class="card">
+                    <div class="card__container">
+                        <div class="card__container_header">
+                            <p class="card__container_header_p">¿Dónde nos ubicamos?</p>
+                        </div>
+                        <div class="card__container_img">
+                            <img src="./img/placeholder.png" style="width: 90px; height: 90px;" alt="">
+                        </div>
+                        <div class="card__container_body">
+                            <p>Somos de la ciudad de Arequipa. Hacemos envio a toda la ciudad, y recojo.</p>
+                            <button class="buttom buttom_type1"><span>Tarifario</span></button>
+                        </div>
                     </div>
-                    <div class="card__container_body">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, minus?</p>
-                        <button class="buttom buttom_type1"><span>Contactarse</span></button>
+                </div>
+                <div class="card card_horario">
+                    <div class="card__container">
+                        <div class="card__container_header">
+                            <p class="card__container_header_p">Horario de Atención</p>
+                        </div>
+                        <div class="card__container_img">
+                            <img src="./img/reloj.png" style="width: 90px; height: 90px;" alt="">
+                        </div>
+                        <div class="card__container_body">
+                            <p>Atendemos de Lunes a Sábados de 9 de la mañana hasta las 6 de la tarde.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -83,7 +139,7 @@
     <footer>
         <div class="footer_container">
             <div class="logo">
-                <p>Añañau</p>
+                <p>Vive, ama, hornea</p>
             </div>
             <div class="social_media">
                 <a href="https://www.facebook.com/Ananaumakimade"><i class="fab fa-facebook-f"></i></a>
