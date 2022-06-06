@@ -276,6 +276,7 @@ hr {
   width: 100%;
   padding: 30px 20px;
   margin-bottom: 10px;
+  scroll-margin-top: 50px;
 }
 
 #slideshow {
@@ -285,6 +286,13 @@ hr {
 }
 
 #nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#talleres {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -476,11 +484,11 @@ hr {
   box-shadow: inset 0 3px 4px hsla(0, 0%, 0%, 0.2);
 }
 
-.buttom_type2:focus {
+/* .buttom_type1:focus {
   outline: thin dotted #444;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
-}
+} */
 
 .buttom_type2 {
   display: inline-block;
@@ -507,11 +515,11 @@ hr {
   box-shadow: inset 0 3px 4px hsla(0, 0%, 0%, 0.2);
 }
 
-.buttom_type2:focus {
+/* .buttom_type2:focus {
   outline: thin dotted #444;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
-}
+} */
 
 /* Footer */
 
