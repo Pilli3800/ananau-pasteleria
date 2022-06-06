@@ -26,6 +26,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   line-height: 1.6;
+  width: 100%;
 }
 
 main {
@@ -397,7 +398,7 @@ hr {
   background-color: #faf5f5;
   border-radius: 0.4em;
   box-shadow: 0 10px 20px 4px rgb(35 35 35 / 10%);
-  margin: 20px auto;
+  margin: 40px auto;
 }
 
 .card_horario {
@@ -540,6 +541,8 @@ footer {
   color: #f1be3c;
 }
 
+/* Responsive */
+
 @media (min-width: 992px) {
   /* Globals */
 
@@ -642,8 +645,8 @@ footer {
 
   .section__contacto_container {
     display: flex;
-    padding: 0 400px;
-    margin-top: 40px;
+    padding: 0 0;
+    margin-top: 10px;
   }
 
   /* Buttoms */
@@ -658,5 +661,25 @@ footer {
 
   .slideshow-container {
     height: 300px;
+    width: 100%;
+  }
+
+  /* Cards */
+
+  .card {
+    width: 280px;
+    height: 350px;
+    background-color: #faf5f5;
+    border-radius: 0.4em;
+    box-shadow: 0 10px 20px 4px rgb(35 35 35 / 10%);
+  }
+
+  .section__contacto_container {
+    /* margin: 0 20vw; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 15%;
+    gap: 30px;
   }
 }
